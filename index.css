@@ -1,5 +1,6 @@
 body {
   background-color: honeydew;
+  display:grid;
 }
 
 .garden {
@@ -14,4 +15,58 @@ body {
   padding: 0.25rem;
   background-color: wheat;
   text-align: center;
+}
+
+#level-1{
+  display:grid;
+ grid-template-columns: repeat(2,1fr);
+ grid-template-rows:repeat(3,1fr);
+}
+
+#level-2{
+  display:grid;
+ grid-template-columns: repeat(2,1fr);
+ grid-template-rows:repeat(3,1fr);
+ .peas{
+  grid-column: span 2;
+ }
+}
+
+#level-3{
+  display:grid;
+ grid-template-columns: repeat(3,1fr);
+ grid-template-rows:repeat(3,1fr);
+ .onions{
+  grid-column: span 2;
+ }
+ .tomatoes{
+  grid-column:span 2;
+ }
+ .carrots{
+  grid-column:span 3;
+ }
+}
+
+#level-4{
+  display:grid;
+ grid-template-columns: repeat(4,1fr);
+ grid-template-rows:repeat(2,1fr);
+
+ .peas{
+  grid-column: span 2;
+ }
+ .onions{
+  grid-row:2;
+  grid-clumn:3;
+ }
+ .carrots{
+  grid-row: 2
+  grid-column-end:5;
+ }
+ .tomatoes{
+  grid-column-start: 2;
+ }
+  .lettuce{
+  grid-column-start: 1;
+ }
 }
